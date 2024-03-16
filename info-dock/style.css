@@ -1,0 +1,136 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  font-family: 'Lexend', sans-serif;
+}
+.container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bar{
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+/*Navbar Section*/
+
+/*End Navbar Section*/
+
+
+/*Hero Section*/
+#hero{
+  background-image: url(./img/hero-boat.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#hero::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #05232D;
+  opacity: 80%;
+  z-index: -1;
+}
+#hero h1{
+  display: block;
+  width: fit-content;
+  font-size: 8rem;
+  position: relative;
+  color: white;
+  padding-bottom: 30px;
+}
+#hero p{
+  display: block;
+  font-size: 2rem;
+  position: relative;
+  color: white;
+}
+#hero .cta{
+  display: inline-block;
+  padding: 19px 81px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 36px;
+  transition: .2s ease;
+  transition-property: background-color, color;
+}
+#hero .cta:hover{
+  color: black;
+  background-color: white;
+
+}
+/*End Hero Section*/
+
+
+/*Overview Section*/
+#overviews{}
+#overviews .overviews{
+  flex-direction: column;
+  text-align: left;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#overviews .overview-title{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+#overviews .overview-cards{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  max-width: 1500px
+}
+#overviews .overview-item{
+  max-width: 295px;
+  flex-basis: 80%;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: white;
+  filter: drop-shadow(-4px 5px 5px #757575);
+  margin: 10px 5%;
+  font-size: 2rem;
+  font-weight: normal;
+}
+#overviews h2{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#overviews ul{
+  list-style-type: none;
+}
+#overviews li{
+  text-align: left;
+  letter-spacing: .1rem;
+  padding-bottom: 30px;
+  text-align: center;
+}
+/*End Overview Section*/
